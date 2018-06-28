@@ -12,6 +12,7 @@ import cn.itcast.pojo.User;
  * 这是用户登录测试类
  * @author Administrator
  * @version 1.1
+ 
  */
 public class UserTest {
 public static void main(String[] args) {
@@ -21,7 +22,7 @@ public static void main(String[] args) {
 	System.out.println("请输入你的选择");
 	Scanner sc=new Scanner(System.in);
 	String choiceString=sc.nextLine();
-	UserDao ud=new UserDaoImpl();
+	UserDao ud=new UserDaoImpl();//remote
 	
 	switch (choiceString) {
 	case "1":
